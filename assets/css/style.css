@@ -1,0 +1,229 @@
+* {
+}
+
+:root {
+  --while-color: #fff;
+  --gay900-color: #191c1f;
+  --warning-color: #f3de6d;
+  --secondary-color: #1b6392;
+}
+
+html {
+  font-family: "Public Sans", sans-serif;
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  user-select: none;
+}
+
+/* =======COMMON======= */
+.container {
+  max-width: 1288px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =======SALE OFF======= */
+#sale-off {
+  background-color: var(--gay900-color);
+  height: 80px;
+}
+
+#sale-off .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--while-color);
+  height: 100%;
+}
+
+.sale-off-left span:first-child {
+  background-color: var(--warning-color);
+  display: inline-flex;
+  transform: rotate(-3deg);
+  padding: 6px 10px;
+  align-items: center;
+  gap: 10px;
+  color: var(--Gray-900, #191c1f);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.sale-off-left span:last-child {
+  color: var(--Gray-00, #fff);
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+#sale-off .container .sale-off-mid {
+  color: var(--Gray-00, #fff);
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+#sale-off .container .sale-off-mid span:last-child {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+#sale-off .container .sale-off-mid span:first-child {
+  color: #ebc80c;
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 0 8px;
+}
+
+#sale-off .sale-off-right {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  height: 48px;
+  gap: 8px;
+  border-radius: 2px;
+  background: #ebc80c;
+  color: #191c1f;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sale-off-close {
+  padding: 8px;
+  gap: 10px;
+  border-radius: 2px;
+  background: var(--Gray-800, #303639);
+  color: #ffffff;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+/* =======HEADER======= */
+#header {
+  background-color: var(--secondary-color);
+}
+
+/* Header top  */
+#header .header-top {
+  border-bottom: 1px solid #3f7ca3;
+}
+
+#header .header-top .container {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 52px;
+}
+
+#header .header-top .header-social {
+  display: flex;
+  align-items: center;
+}
+
+#header .header-top .header-social-link {
+  display: flex;
+  gap: 12px;
+  padding-right: 24px;
+  border-right: 1px solid white;
+  align-items: center;
+}
+
+#header .header-top .language {
+  margin: 0 24px;
+}
+
+.language .fa-solid.fa-angle-down,
+.currency .fa-solid.fa-angle-down {
+  opacity: 0.7;
+}
+
+.header-top .language,
+.header-top .currency {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+/* Header mid */
+#header .header-mid {
+  height: 88px;
+}
+
+.header-mid .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo-box .logo {
+  width: 48px;
+  height: 48px;
+}
+
+.header-mid .logo-box span {
+  color: var(--Gray-00, #fff);
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.header-mid .logo-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* search box  */
+.header-mid .search-box {
+  width: 646px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 14px 20px;
+  background-color: var(--while-color);
+}
+.header-mid .search-box input {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.header-mid .search-box .search-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.header-mid .cta-action {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  font-size: 2.2rem;
+  color: var(--while-color);
+}
+
+.header-mid .cta-action .cart {
+  position: relative;
+}
+
+.header-mid .cta-action .cart span {
+  position: absolute;
+  top: -10px;
+  right: -7px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 2px 4px;
+  background-color: var(--while-color);
+  color: var(--secondary-color);
+  border-radius: 50%;
+  border: 2px solid var(--secondary-color);
+}
